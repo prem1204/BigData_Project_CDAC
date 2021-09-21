@@ -45,4 +45,5 @@ Trigger CFT
 
 ### **ARCHITECTURE DIAGRAM**
 
-![Screenshot](https://github.com/prem1204/BigData_Project_CDAC/blob/master/BD_Project_Idea.jpg)
+
+    ![Screenshot](https://github.com/prem1204/BigData_Project_CDAC/blob/master/BD_Project_Idea.jpg)
