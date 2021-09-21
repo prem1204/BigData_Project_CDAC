@@ -11,11 +11,11 @@ To analyze the campaign finance & contributions (individuals & PACs) for all fed
 
 1. **S3 → Storing raw data**
 
-2. **SageMaker : **
+2. **SageMaker :**
 Extract data from Kaggle and storing in Amazon S3 Bucket
 Trigger CFT
 
-3. **CFT : Creating EMR **
+3. **CFT :** Creating EMR
 
 4. **EMR :**
 
