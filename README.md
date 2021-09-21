@@ -1,13 +1,13 @@
 # BigData_Project_CDAC
 
-# **Topic -> US Federal Campaign Finance Data Analysis Using BigData Technologies**
+## **Topic -> US Federal Campaign Finance Data Analysis Using BigData Technologies**
 
-## **BUSINESS PROBLEM**
+### **BUSINESS PROBLEM**
 
 To analyze the campaign finance & contributions (individuals & PACs) for all federal elections over the last 2 decades & a half.
 
 
-## **TOOLS & TECHNOLOGIES**
+### **TOOLS & TECHNOLOGIES**
 
 1. **S3 → Storing raw data**
 
@@ -43,5 +43,5 @@ Trigger CFT
 
 7. **Power BI: Creating Dashboard**
 
-## **ARCHITECTURE DIAGRAM**
+### **ARCHITECTURE DIAGRAM**
 
