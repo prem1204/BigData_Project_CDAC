@@ -45,3 +45,4 @@ Trigger CFT
 
 ### **ARCHITECTURE DIAGRAM**
 
+![Screenshot](screenshot.png)
