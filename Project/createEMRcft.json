@@ -1,0 +1,82 @@
+{
+  "Description": "EMR_Launch Template",
+  "Parameters": {
+    "ClusterKeyName": {
+      "Type": "String",
+      "Description": "SSH Key to use for the supporting Instances",
+      "Default": "<KeyPairName1>",
+      "AllowedValues": [
+        "<KeyPairName1>",
+        "<KeyPairName2>"
+      ]
+    },
+    "EMRClusterName": {
+      "Type": "String",
+      "Description": "Name to use for the Cluster"
+    },
+    "TagCluster": {
+      "Type": "String",
+      "Description": "Provide a tag name for your cluster",
+      "Default": "Dev",
+      "AllowedValues": [
+        "Dev",
+        "Stage",
+        "Prod"
+      ]
+    }
+  },
+  "Resources": {
+    "EMRCluster": {
+      "Properties": {
+        "Applications": [
+          {
+            "Name": "Spark"
+          }
+        ],
+        "Configurations": [
+          {
+            "Classification": "spark",
+            "ConfigurationProperties": {
+              "maximizeResourceAllocation": "true"
+            }
+          }
+        ],
+        "Instances": {
+          "CoreInstanceGroup": {
+            "InstanceCount": 1,
+            "InstanceType": "m4.large",
+            "Name": "Core Instance Group"
+          },
+          "Ec2KeyName": {
+            "Ref": "ClusterKeyName"
+          },
+          "Ec2SubnetId": "subnet-2b425125",
+          "EmrManagedMasterSecurityGroup": "sg-03d9917d904ecb24f",
+          "EmrManagedSlaveSecurityGroup": "sg-0cd57f9ec3b478e2f",
+          "ServiceAccessSecurityGroup": "sg-abcafdb7",
+          "MasterInstanceGroup": {
+            "InstanceCount": 1,
+            "InstanceType": "m4.large",
+            "Name": "Master Instance Group"
+          }
+        },
+        "JobFlowRole": "EMR_EC2_DefaultRole",
+        "Name": {
+          "Ref": "EMRClusterName"
+        },
+        "ReleaseLabel": "emr-4.7.1",
+        "ServiceRole": "EMR-Provisioning",
+        "VisibleToAllUsers": "true",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": {
+              "Ref": "TagCluster"
+            }
+          }
+        ]
+      },
+      "Type": "AWS::EMR::Cluster"
+    }
+  }
+}
