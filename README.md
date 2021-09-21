@@ -41,7 +41,7 @@ Trigger CFT
 
           b. Parquet
 
-7. **Power BI: Creating Dashboard**
+7. **Power BI:** Creating Dashboard
 
 ### **ARCHITECTURE DIAGRAM**
 
