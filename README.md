@@ -9,7 +9,7 @@ To analyze the campaign finance & contributions (individuals & PACs) for all fed
 
 ### **TOOLS & TECHNOLOGIES**
 
-1. **S3 → Storing raw data**
+1. **S3 →** Storing raw data
 
 2. **SageMaker :**
 Extract data from Kaggle and storing in Amazon S3 Bucket
