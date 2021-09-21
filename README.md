@@ -29,17 +29,17 @@ Trigger CFT
 
 5. **Languages to use:**
 
-      a. Python → ETL and Data Processing
+          a. Python → ETL and Data Processing
 
-      b. HQL → Creating Hive tables and loading data
+          b. HQL → Creating Hive tables and loading data
 
-      c. Shell Script → Automation
+          c. Shell Script → Automation
 
 6. **File Formats to be used:**
 
-      a. CSV
+          a. CSV
 
-      b. Parquet
+          b. Parquet
 
 7. **Power BI: Creating Dashboard**
 
